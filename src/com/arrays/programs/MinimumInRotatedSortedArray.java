@@ -4,7 +4,7 @@ public class MinimumInRotatedSortedArray {
 
 	public static void main(String[] args) {
 		
-		int arr[]= {11,13,15,17};		
+		int arr[]= {11,13,15,16,17};		
 		System.out.println(findMin(arr));
 
 	}
