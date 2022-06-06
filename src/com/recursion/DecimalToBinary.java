@@ -10,18 +10,16 @@ public class DecimalToBinary {
 
 	public static void main(String args[]) {
 		
-		System.out.println(convertToBinary(15));
+		System.out.println(convertToBinary(14));
 		
 	}
 	
-	public static String convertToBinary(int aInput) {		
+	public static int convertToBinary(int aInput) {		
 		
 		if(aInput==0) {
-			return "";
+			return 0;
 		}		
-		int quotient = aInput/2;
-		int remainder  = aInput%2;		
 		
-		return convertToBinary(quotient)+remainder;
+		return aInput%2 + 10*convertToBinary(aInput/2);
 	}
 }
