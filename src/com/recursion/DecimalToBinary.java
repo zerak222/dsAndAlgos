@@ -20,6 +20,9 @@ public class DecimalToBinary {
 			return 0;
 		}		
 		
-		return aInput%2 + 10*convertToBinary(aInput/2);
+		int remainder = aInput%2;
+		int quotient = aInput/2;
+		
+		return remainder + 10*convertToBinary(quotient);
 	}
 }
