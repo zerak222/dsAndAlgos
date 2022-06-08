@@ -21,7 +21,7 @@ public class FactorialProgramme {
 	
 	public static long factorialWithRecursion(long aInput) {
 		if(aInput<=0) {
-			return 0;
+			return 1;
 		}
 		if(aInput==1) {
 			return aInput;
